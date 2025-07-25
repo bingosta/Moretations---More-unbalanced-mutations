@@ -6,7 +6,7 @@
     "points": 1,
     "description": "You've gained a ability to jump from an standing position, this does not go very far.",
     "changes_to": [ "LEAP2" , "LEAP_BASH" ],
-    "category": [ "SPIDER", "MOUSE", "INSECT", "RAPTOR", "LUPINE", "FELINE", "BIRD", "RAT", "BEAST", "CHIMERA" , "URSINE" , "CATTLE" ],
+    "category": [ "SPIDER", "MOUSE", "INSECT", "RAPTOR", "LUPINE", "FELINE", "BIRD", "RAT", "BEAST", "CHIMERA" , "URSINE" , "CATTLE" , "RABBIT" ],
     "spells_learned": [ [ "spell_short_leap", 1 ] ]
   },
   {
@@ -17,7 +17,7 @@
     "description": "You've gained a ability to jump from a standing position, this covers quite the distance.",
     "prereqs": [ "LEAP1" ],
     "changes_to": [ "LEAP_P" , "LEAP_B" ],
-    "category": [ "MOUSE", "INSECT", "RAPTOR", "FELINE", "BIRD" , "SPIDER" ],
+    "category": [ "MOUSE", "INSECT", "RAPTOR", "FELINE", "BIRD" , "SPIDER" , "RABBIT" ],
     "spells_learned": [ [ "spell_leap", 1 ] ]
   },
   {
@@ -57,7 +57,7 @@
     "name": { "str": "Flexible" },
     "points": 1,
     "description": "Obstacles don't slow you down that much anymore.",
-    "category": [ "MOUSE", "INSECT", "RAT", "SPIDER", "CEPHALOPOD", "FISH", "ELFA", "TROGLOBITE", "LIZARD" ],
+    "category": [ "MOUSE", "INSECT", "RAT", "SPIDER", "CEPHALOPOD", "FISH", "ELFA", "TROGLOBITE", "LIZARD" , "RABBIT" ],
     "changes_to": [ "TUNNEL2" ],
     "cancels": [ "BADKNEES" ],
     "movecost_obstacle_modifier": 0.7
@@ -69,7 +69,7 @@
     "points": 2,
     "description": "Your brain has adapted to cluttered enviroments, furniture and other obstacles barely slow you down.",
     "prereqs": [ "TUNNEL1" ],
-    "category": [ "MOUSE", "INSECT", "RAT", "SPIDER" , "CEPHALOPOD" ],
+    "category": [ "MOUSE", "INSECT", "RAT", "SPIDER" , "CEPHALOPOD" , "RABBIT" ],
     "threshreq": [ "THRESH_INSECT" , "THRESH_MOUSE" , "THRESH_SPIDER" , "THRESH_RAT" , "THRESH_CEPHALOPOD" ],
     "cancels": [ "BADKNEES" ],
     "movecost_obstacle_modifier": 0.3
@@ -174,7 +174,7 @@
     "description": "You're just generally quick!  You get a 10% bonus to action points.",
     "starting_trait": true,
     "changes_to": [ "QUICK2" ],
-    "category": [ "FISH", "BIRD", "INSECT", "TROGLOBITE", "CHIMERA", "RAPTOR", "MOUSE" , "SPIDER" ],
+    "category": [ "FISH", "BIRD", "INSECT", "TROGLOBITE", "CHIMERA", "RAPTOR", "MOUSE" , "SPIDER" , "RABBIT" ],
     "speed_modifier": 1.1
   },
   {
@@ -184,7 +184,7 @@
     "points": 8,
     "description": "20% Action point bonus! Damn.",
     "prereqs": [ "QUICK" ],
-    "category": [ "FISH", "BIRD", "INSECT", "RAPTOR", "MOUSE" ],
+    "category": [ "FISH", "BIRD", "INSECT", "RAPTOR", "MOUSE" , "RABBIT" ],
     "threshreq": [ "THRESH_FISH" , "THRESH_BIRD", "THRESH_MOUSE" , "THRESH_INSECT" , "THRESH_RAPTOR" ],
     "speed_modifier": 1.2
   },
@@ -266,7 +266,7 @@
     "description": "You have fast reflexes, allowing you to dodge attacks more easily.",
     "starting_trait": true,
     "dodge_modifier": 3,
-    "category": [ "FELINE" , "BIRD" , "RAPTOR" , "INSECT" , "FISH" , "SPIDER" ]
+    "category": [ "FELINE" , "BIRD" , "RAPTOR" , "INSECT" , "FISH" , "SPIDER" , "RABBIT" ]
   },
   {
     "type": "mutation",
@@ -678,7 +678,7 @@
     "starting_trait": true,
     "cancels": [ "BADCARDIO" ],
     "changes_to": [ "GOODCARDIO2" ],
-    "category": [ "FISH", "LUPINE", "MOUSE", "INSECT"  , "BIRD" ],
+    "category": [ "FISH", "LUPINE", "MOUSE", "INSECT"  , "BIRD" , "RABBIT" ],
     "max_stamina_modifier": 1.25
   },
   {
@@ -719,8 +719,8 @@
     "name": { "str": "Nictitating Membrane" },
     "points": 0,
     "visibility": 1,
-    "description": "You have a set of clear lenses which lower over your eyes while underwater, allowing you to see as though you were wearing goggles. Decreases wet penalties.",
-    "category": [ "LIZARD", "FISH" , "BIRD" , "CEPHALOPOD" ],
+    "description": "You have a set of clear lenses which lower over your eyes while underwater or underground, allowing you to see as though you were wearing goggles. Decreases wet penalties.",
+    "category": [ "LIZARD", "FISH" , "BIRD" , "CEPHALOPOD" , "RABBIT" ],
     "wet_protection": [ { "part": "eyes", "neutral": 10 } ]
   },
   {
