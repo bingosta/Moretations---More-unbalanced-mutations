@@ -1,6 +1,6 @@
-Cataclysm:BN mod where mutations are more powerful and have a much bigger range of uses
+Cataclysm:BN mod where mutations are more powerful and have a much bigger range of uses, see last section for abstract tools
 
-New stuff - 
+- New stuff - 
 
 Leaping: Weak leap, normal leap, leap + attack x2 (short + long), extra long leap [spider, mouse insect, raptor, chimera, cattle, ursine, rat, bird, feline, ursine]
 
@@ -39,7 +39,7 @@ Barbed tongue [feline only] (fucking weird, not very useful lol)
 Fishing + fishing2 [feline, ursine, bird, spider not on 2]
 
 
-Category expansion-
+- Category expansion-
 
 Quick [+spider]
 
@@ -70,7 +70,7 @@ Addiction resistant [+ same as above]
 Pain recovery [+ ursine, feline, plant]
 
 
-Category removal-
+- Category removal-
 
 Vomitous [- rat]
 
@@ -97,7 +97,7 @@ Bear muzzle base damage 5 > 20
 Saber tooth base damage 25 > 35
 
 
-Abstract tools- "Items" created from certain mutations, weightless but cost stamina to create and are single use
+- Abstract tools- "Items" created from certain mutations, weightless but cost stamina to create and are single use
 
 Pry + dig -from broad paws
 
