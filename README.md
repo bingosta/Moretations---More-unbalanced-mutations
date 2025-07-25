@@ -32,7 +32,7 @@ Spear tongue [chimera, cephalopod, insect, lizard]
 
 Sleek scales2 [fish only]
 
-Climber + climber2/arboreal (not sure if ill keep this one) [feline, ursine, mouse, rat, insect, lizard]
+Climber + climber2/arboreal[feline, ursine, mouse, rat, insect, lizard]
 
 Barbed tongue [feline only] (fucking weird, not very useful lol)
 
