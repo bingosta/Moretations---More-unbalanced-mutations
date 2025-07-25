@@ -1,0 +1,15 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "moretations",
+    "name": "MOREtations",
+    "authors": [
+      "tangy"
+    ],
+    "description": "A variety of mutations to make your thresholds more mobile, flavourful and utilitarian. Jumping? Climbing? Digging? Releasing strange substances? Growing bizarre apendices? (almost)Everybody gets one! Some vanilla mutations also have been modified for a bigger threshold range. Check PDF for specific changes.",
+    "category": "mutations",
+    "dependencies": [
+      "bn"
+    ]
+  }
+]
