@@ -1,7 +1,7 @@
 Cataclysm:BN mod where mutations are more powerful and have a much bigger range of uses
 
 New stuff - 
-Leaping: Weak leap, normal leap, leap + attack x2 (short + long), extra long leap [spider, mouse insect, raptor, chimera, cattle, ursine, rat, bird, feline, ursine]
+-Leaping: Weak leap, normal leap, leap + attack x2 (short + long), extra long leap [spider, mouse insect, raptor, chimera, cattle, ursine, rat, bird, feline, ursine]
 Obstacle clearer 1 and 2 [mouse, insect, rat, troglobite, elfa, fish, lizard, spider, cephalopod]
 Quick 2 [fish, bird, raptor, insect, mouse only]
 Deft 2 [lupine only]
