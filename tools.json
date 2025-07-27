@@ -27,12 +27,10 @@
     "price_postapoc": 0,
     "symbol": ".",
     "color": "dark_gray",
-    "spoils_in": "6 hours",
+    "spoils_in": "2 hours",
     "qualities": [ [ "PRY", 4 ], [ "DIG", 4 ] ],
-    "flags": [ "PSEUDO" ],
-    "use_action": "CROWBAR",
-    "charges": 1,
-    "charges_per_use": 1
+    "flags": [ "PSEUDO" , "NO_REPAIR" , "NO_SALVAGE" , "NONCONDUCTIVE", "TRADER_AVOID" , "UNBREAKABLE" ],
+    "use_action": "CROWBAR"
   },
   {
  "id": "paw_action",
@@ -46,11 +44,9 @@
     "price_postapoc": 0,
     "symbol": ".",
     "color": "dark_gray",
-    "spoils_in": "6 hours",
+    "spoils_in": "2 hours",
     "qualities": [ [ "DIG", 4 ] ],
-    "flags": [ "PSEUDO" ],
-    "charges": 1,
-    "charges_per_use": 1
+    "flags": [ "PSEUDO" , "NO_REPAIR" , "NO_SALVAGE" , "NONCONDUCTIVE", "TRADER_AVOID" , "UNBREAKABLE" ]
   },
   {
  "id": "wbeak_action",
@@ -64,12 +60,9 @@
     "price_postapoc": 0,
     "symbol": ".",
     "color": "dark_gray",
-    "spoils_in": "6 hours",
+    "spoils_in": "2 hours",
     "qualities": [ [ "HAMMER", 4 ], [ "DRILL", 4 ], [ "HAMMER_FINE", 1 ], [ "CHISEL" , 1 ] ],
-    "flags": [ "PSEUDO" ],
-    "use_action": "HAMMER",
-    "charges_per_use": 1,
-    "charges": 1
+    "flags": [ "PSEUDO" , "NO_REPAIR" , "NO_SALVAGE" , "NONCONDUCTIVE", "TRADER_AVOID" , "UNBREAKABLE" ]
   },
   {
  "id": "claw_action",
@@ -83,11 +76,9 @@
     "price_postapoc": 0,
     "symbol": ".",
     "color": "dark_gray",
-    "spoils_in": "6 hours",
+    "spoils_in": "2 hours",
     "qualities": [ [ "CUT", 4 ] , [ "BUTCHER", 6 ] ],
-    "flags": [ "PSEUDO" ],
-    "charges": 1,
-    "charges_per_use": 1
+    "flags": [ "PSEUDO" , "NO_REPAIR" , "NO_SALVAGE" , "NONCONDUCTIVE", "TRADER_AVOID" , "UNBREAKABLE" ]
   },
   {
  "id": "rclaw_action",
@@ -101,47 +92,9 @@
     "price_postapoc": 0,
     "symbol": ".",
     "color": "dark_gray",
-    "spoils_in": "6 hours",
+    "spoils_in": "2 hours",
     "qualities": [ [ "CUT", 4 ], [ "CUT_FINE", 2 ], [ "DIG", 2 ], [ "BUTCHER", 15 ] ],
-    "flags": [ "PSEUDO" ],
-    "charges": 1,
-    "charges_per_use": 1
-  },
-  {
- "id": "climb_action",
-    "type": "TOOL",
-    "category": "tools",
-    "name": { "str": "Action - Climber" },
-    "description": "Your will to perform the next action (climbing) is manifested here.",
-    "weight": "0 g",
-    "volume": "0 ml",
-    "price": 0,
-    "price_postapoc": 0,
-    "symbol": ".",
-    "color": "dark_gray",
-    "spoils_in": "6 hours",
-    "qualities": [ [ "ROPE", 5 ] ],
-    "flags": [ "PSEUDO" ],
-    "charges": 1,
-    "charges_per_use": 1
-  },
-  {
-  "id": "climb_action_better",
-    "type": "TOOL",
-    "category": "tools",
-    "name": { "str": "Action - Arboreal" },
-    "description": "Your will to perform the next action (climbing) is manifested here.",
-    "weight": "0 g",
-    "volume": "0 ml",
-    "price": 0,
-    "price_postapoc": 0,
-    "symbol": ".",
-    "color": "dark_gray",
-    "spoils_in": "6 hours",
-    "qualities": [ [ "ROPE", 15 ] ],
-    "flags": [ "PSEUDO" ],
-    "charges": 1,
-    "charges_per_use": 1
+    "flags": [ "PSEUDO" , "NO_REPAIR" , "NO_SALVAGE" , "NONCONDUCTIVE", "TRADER_AVOID" , "UNBREAKABLE" ]
   },
   {
     "id": "tindalos_whistle",
@@ -170,12 +123,10 @@
     "price_postapoc": 0,
     "symbol": ".",
     "color": "dark_gray",
-    "spoils_in": "6 hours",
+    "spoils_in": "2 hours",
     "use_action": "FISH_ROD",
     "qualities": [ [ "FISHING", 1 ] ],
-    "flags": [ "FISH_POOR" ],
-    "charges": 1,
-    "charges_per_use": 1
+    "flags": [ "FISH_POOR", "NO_REPAIR" , "NO_SALVAGE" , "NONCONDUCTIVE", "TRADER_AVOID" , "UNBREAKABLE" ]
   },
   {
     "id": "fishing_action_better",
@@ -189,12 +140,10 @@
     "price_postapoc": 0,
     "symbol": ".",
     "color": "dark_gray",
-    "spoils_in": "6 hours",
+    "spoils_in": "2 hours",
     "use_action": "FISH_ROD",
     "qualities": [ [ "FISHING", 2 ] ],
-    "flags": [ "FISH_GOOD" ],
-    "charges": 1,
-    "charges_per_use": 1
+    "flags": [ "FISH_GOOD" , "NO_REPAIR" , "NO_SALVAGE" , "NONCONDUCTIVE", "TRADER_AVOID" , "UNBREAKABLE" ]
   },
   {
     "id": "dog_whistle",
@@ -241,9 +190,8 @@
     "price_postapoc": 0,
     "symbol": ".",
     "color": "dark_gray",
-    "spoils_in": "6 hours",
+    "spoils_in": "2 hours",
     "qualities": [ [ "SHEAR", 1 ] ],
-    "charges": 1,
-    "charges_per_use": 1
+    "flags": [ "PSEUDO" , "NO_REPAIR" , "NO_SALVAGE" , "NONCONDUCTIVE", "TRADER_AVOID" , "UNBREAKABLE" ]
   }
 ]
