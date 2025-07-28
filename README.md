@@ -40,6 +40,8 @@ Barbed tongue [feline only] (fucking weird, not very useful lol)
 
 Fishing + fishing2 [feline, ursine, bird, spider not on 2]
 
+Mammalian lips aka not needing an air pump to fill up stuff [feline, ursine, lupine, mouse, rat, troglobite, elfa, chimera]
+
 
 - Category expansion-
 
