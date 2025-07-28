@@ -182,7 +182,7 @@
     "id": "shear_action",
     "type": "GENERIC",
     "category": "tools",
-    "name": { "str_sp": "shears" },
+    "name": { "str_sp": "Action - Barbed tongue" },
     "description": "Your will to perform the next action (shearing) is manifested here.",
     "weight": "0 g",
     "volume": "0 ml",
@@ -192,6 +192,22 @@
     "color": "dark_gray",
     "spoils_in": "2 hours",
     "qualities": [ [ "SHEAR", 1 ] ],
+    "flags": [ "PSEUDO" , "NO_REPAIR" , "NO_SALVAGE" , "NONCONDUCTIVE", "TRADER_AVOID" , "UNBREAKABLE" ]
+    },
+  {
+    "id": "pressurize_action",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str_sp": "Action - Mammalian lips" },
+    "description": "Your will to perform the next action (pumping air) is manifested here.",
+    "weight": "0 g",
+    "volume": "0 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "symbol": ".",
+    "color": "dark_gray",
+    "spoils_in": "2 hours",
+    "qualities": [ [ "PRESSURIZATION", 1 ] ],
     "flags": [ "PSEUDO" , "NO_REPAIR" , "NO_SALVAGE" , "NONCONDUCTIVE", "TRADER_AVOID" , "UNBREAKABLE" ]
   }
 ]

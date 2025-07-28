@@ -1283,8 +1283,7 @@
     "body_part": "mouth",
     "blocker_mutations": [ "MUZZLE", "MUZZLE_LONG", "MUZZLE_RAT" ],
     "chance": 15,
-    "base_damage": { "damage_type": "stab", "amount": 25 }
-  },
+    "base_damage": { "damage_type": "stab", "amount": 25 } },
   "purifiable": false
   },
   {
@@ -1310,6 +1309,19 @@
       "base_damage": { "damage_type": "stab", "amount": 35 },
       "strength_damage": { "damage_type": "stab", "amount": 1 }
     }
+  },
+  {
+    "type": "mutation",
+    "id": "LIPS",
+    "name": { "str": "Mammalian lips" },
+    "points": 0,
+    "description": "Your mammalian lips allow you to pressurize inflatable objects.",
+    "category": [ "FELINE" , "URSINE" , "LUPINE" , "BEAST" , "RAT" , "RABBIT" , "MOUSE" , "CATTLE" , "CHIMERA" , "ELFA" , "TROGLOBITE" ],
+    "active": true,
+    "cost": 50,
+    "hunger": true,
+    "thirst": true,
+    "spawn_item": { "type": "pressurize_action", "message":  "You prepare youself for the activity." }
   }
 ]
 
