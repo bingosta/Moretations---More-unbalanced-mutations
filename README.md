@@ -42,6 +42,10 @@ Fishing + fishing2 [feline, ursine, bird, spider not on 2]
 
 Mammalian lips aka not needing an air pump to fill up stuff [feline, ursine, lupine, mouse, rat, troglobite, elfa, chimera]
 
+Obligate carvivore [feline, spider]
+
+All terrain [cattle, bird, alpha, rabbit, mouse]
+
 
 - Category expansion-
 
@@ -73,12 +77,31 @@ Addiction resistant [+ same as above]
 
 Pain recovery [+ ursine, feline, plant]
 
+Nictating membrane [+ bird, cephalopod, rabbit]
+
+Cold blooded4 [+ fish]
+
+Cold blooded [+ raptor]
+
+Killer drive [+ feline, ursine, raptor, cephalopod, chimera, beast, lizard, insect, spider, fish]
+
+Strong legs [+ raptor]
+
+Thick skin [+ ursine, troglobite]
+
+
 
 - Category removal-
 
 Vomitous [- rat]
 
-Buffs-
+Cold blooded2 [-raptor]
+
+Pale [- lupine]
+
+Albino [- mouse, rabbit]
+
+- Buffs-
 
 Broad paws: doesn’t affect survival anymore
 
@@ -99,7 +122,13 @@ Sleek scales: 10
 Bear muzzle base damage 5 > 20
 
 Saber tooth base damage 25 > 35
+Small and tiny now offer fall damage reduction, 0.9>0.8 and 0.6>0.5 respectively
 
+Carnivore has been split into regular and obligate, obligate keeps the original debuff while regular is 1/3
+
+Encumberance from slit nostrils removed
+
+Feathered arms encumberance lowered 20>5
 
 - Abstract tools- "Items" created from certain mutations, weightless but cost stamina to create and are single use
 
