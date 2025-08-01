@@ -78,15 +78,20 @@
     "type": "mutation",
     "id": "PAWS_LARGE",
     "name": { "str": "Broad Paws" },
-    "points": -8,
+    "points": -6,
     "visibility": 4,
     "mixed_effect": true,
     "description": "Your paws are much larger now.  Manual dexterity is difficult: permanent hand encumbrance of 20, serious problems crafting, and no gloves.  In return, though, you can swim better, deal bonus bash damage and perform a smacking attack. Activate to dig and pry.",
     "active": true,
     "cost": 200,
-    "prereqs": [ "PAWS" ],
     "movecost_swim_modifier": 0.75,
-    "spawn_item": { "type": "bpaw_action", "message": "You prepare youself for the activity." },
+    "encumbrance_always": [ [ "hand_l", 20 ], [ "hand_r", 20 ] ],
+    "restricts_gear": [ "hand_l", "hand_r" ],
+    "types": [ "HANDS" ],
+    "prereqs": [ "PAWS" ],
+    "cancels": [ "TALONS" ],
+    "category": [ "BEAST", "URSINE" ],
+    "spawn_item": { "type": "bpaw_action", "message": "You prepare yourself for the activity." },
     "craft_skill_bonus": [
       [ "electronics", -3 ],
       [ "tailor", -3 ],
@@ -97,18 +102,12 @@
       [ "fabrication", -1 ],
       [ "cooking", -1 ]
     ],
-    "attacks": {
-      "attack_text_u": "You smack %s",
-      "attack_text_npc": "%1$s smacks %2$s",
-      "body_part": "hands",
-      "chance": 15,
-      "base_damage": { "damage_type": "bash", "amount": 25 },
-      "encumbrance_always": [ [ "hand_l", 20 ], [ "hand_r", 20 ] ],
-      "restricts_gear": [ "hand_l", "hand_r" ],
-      "types": [ "HANDS" ],
-      "cancels": [ "TALONS" ],
-      "category": [ "BEAST", "URSINE" ],
-      "bash_dmg_bonus": 25
+     "attacks": {
+     "attack_text_u": "You smack %s",
+     "attack_text_npc": "%1$s smacks %2$s",
+     "chance": 15,
+     "base_damage": { "damage_type": "bash", "amount": 25 },
+     "bash_dmg_bonus": 25
     }
   },
   {
@@ -122,7 +121,7 @@
     "description": "You have claws on the ends of your fingers.  If you aren't wearing gloves, your unarmed attacks deal a minor amount of cutting damage.",
     "active": true,
     "cost": 200,
-    "spawn_item": { "type": "claw_action", "message": "You prepare youself for the activity." },
+    "spawn_item": { "type": "claw_action", "message": "You prepare yourself for the activity." },
     "types": [ "CLAWS" ],
     "prereqs": [ "NAILS" ],
     "changes_to": [ "CLAWS_RETRACT", "CLAWS_RAT" ],
@@ -139,7 +138,7 @@
     "butchering_quality": 4,
     "active": true,
     "cost": 200,
-    "spawn_item": { "type": "claw_action", "message": "You prepare youself for the activity." },
+    "spawn_item": { "type": "claw_action", "message": "You prepare yourself for the activity." },
     "types": [ "CLAWS" ],
     "prereqs": [ "CLAWS" ],
     "cancels": [ "ARM_TENTACLES", "ARM_TENTACLES_4", "ARM_TENTACLES_8" ],
@@ -158,7 +157,7 @@
     "description": "Your paws are bone, muscle, and claw with a thin layer of skin and fur.  They might as well be made of stainless steel.",
     "active": true,
     "cost": 200,
-    "spawn_item": { "type": "rclaw_action", "message": "You prepare youself for the activity." },
+    "spawn_item": { "type": "rclaw_action", "message": "You prepare yourself for the activity." },
     "types": [ "CLAWS" ],
     "prereqs": [ "CLAWS_RAT" ],
     "prereqs2": [ "PAWS" ],
@@ -277,7 +276,7 @@
     "description": "Pecking at prey is part of your daily routine now.  Slightly reduces wet effects.",
     "active": true,
     "cost": 200,
-    "spawn_item": { "type": "wbeak_action", "message": "You prepare youself for the activity." },
+    "spawn_item": { "type": "wbeak_action", "message": "You prepare yourself for the activity." },
     "purifiable": false,
     "types": [ "TEETH", "MUZZLE" ],
     "cancels": [ "MOUTH_TENTACLES" ],
@@ -345,7 +344,7 @@
     "points": 2,
     "description": "You have undergone a series of adaptations that make you a better swimmer, swimming is also a little more enjoable now.",
     "category": [ "FELINE" , "LUPINE" , "URSINE" , "BIRD" ],
-    "movecost_swim_modifier": 0.75,
+    "movecost_swim_modifier": 0.70,
     "wet_protection": [
       { "part": "head", "neutral": 16, "good": 10  },
       { "part": "leg_l", "neutral": 16, "good": 10  },
@@ -398,10 +397,12 @@
     "points": 2,
     "visibility": 6,
     "description": "You got a little something from your arachnid cousins, you can now do a piercing attack.",
-    "category": [ "SPIDER" ],
-    "threshreq": [ "THRESH_SPIDER" ],
     "types": [ "TAIL" ],
     "prereqs": [ "TAIL_STING" ],
+    "category": [ "SPIDER" ],
+
+    "threshreq": [ "THRESH_SPIDER" ],
+
     "restricts_gear": [ "leg_l", "leg_r" ],
     "allow_soft_gear": true,
     "attacks": {
@@ -414,9 +415,9 @@
   },
   {
     "type": "mutation",
-    "id": "BEE",
+    "id": "HONEY",
     "name": { "str": "Honeymaking" },
-    "points": 1,
+    "points": 0,
     "description": "You have acquired some physiological characteristics of honey-producing insects, activate to make honey.",
     "threshreq": [ "THRESH_INSECT" ],
     "category": [ "INSECT" ],
@@ -1122,7 +1123,7 @@
     "cost": 100,
     "hunger": true,
     "thirst": true,
-    "spawn_item": { "type": "shear_action", "message":  "You prepare youself for the activity." }
+    "spawn_item": { "type": "shear_action", "message":  "You prepare yourself for the activity." }
   },
   {
     "type": "mutation",
@@ -1135,7 +1136,7 @@
     "cost": 100,
     "hunger": true,
     "thirst": true,
-    "spawn_item": { "type": "fishing_action", "message":  "You prepare youself for the activity." }
+    "spawn_item": { "type": "fishing_action", "message":  "You prepare yourself for the activity." }
   },
   {
     "type": "mutation",
@@ -1148,7 +1149,7 @@
     "cost": 100,
     "hunger": true,
     "thirst": true,
-    "spawn_item": { "type": "fishing_action_better", "message":  "You prepare youself for the activity." }
+    "spawn_item": { "type": "fishing_action_better", "message":  "You prepare yourself for the activity." }
   },
 {
   "type": "mutation",
@@ -1321,7 +1322,7 @@
     "cost": 50,
     "hunger": true,
     "thirst": true,
-    "spawn_item": { "type": "pressurize_action", "message":  "You prepare youself for the activity." }
+    "spawn_item": { "type": "pressurize_action", "message":  "You prepare yourself for the activity." }
   },
   {
     "type": "mutation",
@@ -1583,6 +1584,230 @@
     ],
     "encumbrance_always": [ [ "arm_l", 5 ], [ "arm_r", 5 ] ],
     "armor": [ { "parts": [ "arm_l", "arm_r" ], "bash": 1 } ]
+  },
+  {
+    "type": "mutation",
+    "id": "HORNS",
+    "name": { "str": "Horns" },
+    "points": 1,
+    "visibility": 3,
+    "ugliness": 1,
+    "description": "You have a pair of small horns on your head.  They allow you to make a weak piercing headbutt attack.",
+    "types": [ "HORNS" ],
+    "prereqs": [ "HEADBUMPS" ],
+    "changes_to": [ "HORNS_CURLED", "HORNS_POINTED", "ANTLERS" ],
+    "category": [ "CATTLE" ],
+    "attacks": {
+      "attack_text_u": "You headbutt %s with your horns",
+      "attack_text_npc": "%1$s headbutts %2$s with their horns",
+      "chance": 20,
+      "strength_damage": { "damage_type": "bash", "amount": 1 }
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "HORNS_CURLED",
+    "name": { "str": "Curled Horns" },
+    "points": -2,
+    "visibility": 8,
+    "ugliness": 2,
+    "mixed_effect": true,
+    "description": "You have a pair of large curled horns, like those of a ram.  They allow you to make a powerful bashing headbutt attack, but prevent wearing any headwear.",
+    "types": [ "HORNS" ],
+    "prereqs": [ "HORNS" ],
+    "category": [ "CHIMERA" , "CATTLE" ],
+    "restricts_gear": [ "head" ],
+    "attacks": {
+      "attack_text_u": "You headbutt %s with your curled horns",
+      "attack_text_npc": "%1$s headbutts %2$s with their curled horns",
+      "chance": 10,
+      "base_damage": { "damage_type": "bash", "amount": 20 },
+      "strength_damage": { "damage_type": "bash", "amount": 2 }
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "HORNS_POINTED",
+    "name": { "str": "Pointed Horns" },
+    "points": 1,
+    "visibility": 8,
+    "ugliness": 2,
+    "mixed_effect": true,
+    "description": "You have a pair of long, pointed horns, like those of an antelope.  They allow you to make a strong piercing headbutt attack, but prevent wearing headwear that is not made of fabric.",
+    "types": [ "HORNS" ],
+    "prereqs": [ "HORNS" ],
+    "category": [ "CATTLE" ],
+    "restricts_gear": [ "head" ],
+    "allow_soft_gear": true,
+    "attacks": {
+      "attack_text_u": "You stab %s with your pointed horns",
+      "attack_text_npc": "%1$s stabs %2$s with their pointed horns",
+      "chance": 10,
+      "base_damage": { "damage_type": "stab", "amount": 30 },
+      "strength_damage": { "damage_type": "stab", "amount": 1 }
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "ANTLERS",
+    "name": { "str": "Antlers" },
+    "points": -2,
+    "visibility": 10,
+    "ugliness": 3,
+    "mixed_effect": true,
+    "description": "You have a huge rack of antlers, like those of a moose.  They allow you to make a weak headbutt attack, but prevent wearing headwear that is not made of fabric.",
+    "types": [ "HORNS" ],
+    "prereqs": [ "HORNS" ],
+    "category": [ "CATTLE" ],
+    "spawn_item": { "type": "paw_action", "message": "You prepare yourself for the activity." },
+    "restricts_gear": [ "head" ],
+    "allow_soft_gear": true,
+    "attacks": {
+      "attack_text_u": "You butt %s with your antlers",
+      "attack_text_npc": "%1$s butts %2$s with their antlers",
+      "chance": 10,
+      "base_damage": { "damage_type": "bash", "amount": -10 },
+      "strength_damage": { "damage_type": "bash", "amount": 2 }
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "FLEET2",
+    "name": { "str": "Road-Runner" },
+    "points": 3,
+    "description": "Your legs are extremely limber and fast-moving.  You move 30% faster on flat surfaces.",
+    "prereqs": [ "FLEET" ],
+    "types": [ "RUNNING" ],
+    "category": [ "BIRD" , "RABBIT" , "RAPTOR" ],
+    "movecost_flatground_modifier": 0.7
+  },
+  {
+    "type": "mutation",
+    "id": "GOURMAND",
+    "name": { "str": "Gourmand" },
+    "points": 2,
+    "description": "You eat faster, and can eat and drink more, than anyone else!  You also enjoy food more; delicious food is better for your morale, and you don't mind unsavory meals as much.",
+    "category": [ "ALPHA" , "BIRD" ],
+    "starting_trait": true,
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "JITTERY",
+    "name": { "str": "Jittery" },
+    "points": -3,
+    "description": "When very hungry or under the effects of stimulants, you may find your hands shaking uncontrollably, severely reducing your Dexterity.",
+    "starting_trait": true,
+    "valid": false,
+    "category": [ "MEDICAL", "MOUSE", "RABBIT" , "RAPTOR" , "BIRD" ]
+  },
+  {
+    "type": "mutation",
+    "id": "HOARDER",
+    "name": { "str": "Hoarder" },
+    "points": -4,
+    "description": "You don't feel right unless you're carrying as much as you can.  You suffer morale penalties for carrying less than maximum volume (weight is ignored).  Xanax can help control this anxiety.",
+    "starting_trait": true,
+    "valid": false,
+    "category": [ "MOUSE" ]
+  },
+  {
+    "type": "mutation",
+    "id": "FASTREADER",
+    "name": { "str": "Fast Reader" },
+    "points": 1,
+    "description": "You're a quick reader, and can get through books a lot faster than most.",
+    "reading_speed_multiplier": 0.8,
+    "starting_trait": true,
+    "valid": false,
+    "cancels": [ "ILLITERATE", "SLOWREADER" ],
+    "category": [ "MEDICAL" , "ALPHA" ]
+  },
+  {
+    "type": "mutation",
+    "id": "PAWS",
+    "name": { "str": "Paws" },
+    "points": -3,
+    "visibility": 3,
+    "ugliness": 2,
+    "mixed_effect": true,
+    "description": "Your hands have fused into quasi-paws.  Fine manipulation is a challenge: permanent hand encumbrance of 10, difficulty with delicate craftwork, and your gloves don't fit.  But they handle water better and now you can dig.",
+    "encumbrance_always": [ [ "hand_l", 10 ], [ "hand_r", 10 ] ],
+    "restricts_gear": [ "hand_l", "hand_r" ],
+    "craft_skill_bonus": [ [ "electronics", -2 ], [ "tailor", -2 ], [ "mechanics", -2 ] ],
+    "types": [ "HANDS" ],
+    "prereqs": [ "CLAWS", "CLAWS_RETRACT", "CLAWS_RAT" ],
+    "cancels": [ "TALONS" ],
+    "changes_to": [ "PAWS_LARGE" ],
+    "category": [ "LUPINE", "RAT", "FELINE" ],
+    "spawn_item": { "type": "paw_action", "message": "You prepare yourself for the activity." }
+  },
+  {
+    "type": "mutation",
+    "id": "OUTDOORSMAN",
+    "name": { "str": "Outdoorsman" },
+    "points": 1,
+    "description": "You are accustomed to being exposed to the elements.  This decreases morale penalties for being wet.",
+    "category": [ "CATTLE" , "URSINE" , "RAPTOR" , "CEPHALOPOD" , "ALPHA" ],
+    "starting_trait": true,
+    "valid": false,
+    "wet_protection": [
+      { "part": "head", "neutral": 6 },
+      { "part": "leg_l", "neutral": 8 },
+      { "part": "leg_r", "neutral": 8 },
+      { "part": "foot_l", "neutral": 2 },
+      { "part": "foot_r", "neutral": 2 },
+      { "part": "arm_l", "neutral": 8 },
+      { "part": "arm_r", "neutral": 8 },
+      { "part": "hand_l", "neutral": 12 },
+      { "part": "hand_r", "neutral": 12 },
+      { "part": "torso", "neutral": 10 }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "FASTREADER2",
+    "name": { "str": "Fastest Reader" },
+    "points": 2,
+    "description": "Your superiority manifestates through the speed at which you aquire information through reading.",
+    "reading_speed_multiplier": 0.6,
+    "starting_trait": true,
+    "valid": false,
+    "cancels": [ "ILLITERATE", "SLOWREADER" ],
+    "threshreq": [ "THRESH_ALPHA" ],
+    "category": [ "ALPHA" ]
+  },
+  {
+    "type": "mutation",
+    "id": "FASTLEARNER",
+    "name": { "str": "Fast Learner" },
+    "points": 3,
+    "description": "You have a flexible mind, allowing you to learn skills much faster than others.  Note that this only applies to real-world experience, not to skill gain from other sources like books.",
+    "starting_trait": true,
+    "valid": false,
+    "cancels": [ "SLOWLEARNER" ],
+    "category": [ "ALPHA" ]
+  },
+  {
+    "type": "mutation",
+    "id": "TERRIFYING",
+    "name": { "str": "Terrifying" },
+    "points": 1,
+    "description": "There's something about you that creatures find frightening, and they are more likely to try to flee.",
+    "starting_trait": true,
+    "category": [ "BEAST", "INSECT", "CHIMERA" , "CATTLE" , "ALPHA" ],
+    "social_modifiers": { "intimidate": 15 }
+  },
+  {
+    "type": "mutation",
+    "id": "SELFAWARE",
+    "name": { "str": "Self-Aware" },
+    "points": 1,
+    "description": "You get to see your exact amount of HP remaining and health, instead of only having a vague idea of whether you're in good condition or not.",
+    "starting_trait": true,
+    "valid": false,
+    "active": true,
+    "category": [ "MEDICAL" , "ALPHA" ]
   }
 ]
 
